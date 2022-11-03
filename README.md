@@ -1,1 +1,1 @@
-# rock_paper_scissors
+A rock paer scissors game made using vanilla javacript. 

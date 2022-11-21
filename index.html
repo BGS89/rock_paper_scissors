@@ -4,37 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24db168bc6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
-<header>
-    <h1>ROCK || PAPER || SCISSORS</h1>
-</header>
-<main>
 
-    <section class="player">
-        <button class="option" id="rock" value="rock">Rock</button>
-        <button class="option" id="paper" value="paper">Paper</button>
-        <button class="option" id="scissors" value="scissors">Scissors</button>
-    </section>
+<div class="container">
 
-    <div class="controls">
-        <button id="play">PLAY</button>
-        <button id="reset">RESET</button>
-    </div>
+    <main>
+        <header>
+            <h1>ROCK || PAPER || SCISSORS</h1>
+        </header>
+        <section class="player">
+            <button class="option" id="rock" value="rock">Rock</button>
+            <button class="option" id="paper" value="paper">Paper</button>
+            <button class="option" id="scissors" value="scissors">Scissors</button>
+        </section>
 
-    <section class="result">
-        <div class="option">
-            <h3><span id="firstResponse">Player</span></h3>
+        <div class="controls">
+            <button id="play">PLAY</button>
+            <button id="reset">RESET</button>
         </div>
-        <div class="option">
-            <h3><span id="secondResponse">Computer</span></h3>
-        </div>
-        <div class="option">
+
+        <section class="result">
+            <div class="option">
+                <h3><span id="firstResponse">Player </span><span id="score-one"></span></h3>
+                <div class="hand">
+                    <i class="fa-regular fa-hand-back-fist fa-8x" id="player-rock"></i>
+                    <i class="fa-regular fa-hand fa-8x" id="player-paper"></i>
+                    <i class="fa-regular fa-hand-scissors fa-8x" id="player-scissors"></i>
+                </div>
+
+
+            </div>
+            <div class="option">
+                <h3><span id="secondResponse">Computer <span id="score-two"></span></span></h3>
+                <div class="hand">
+                    <i class="fa-regular fa-hand-back-fist fa-8x" id="computer-rock"></i>
+                    <i class="fa-regular fa-hand fa-8x" id="computer-paper"></i>
+                    <i class="fa-regular fa-hand-scissors fa-8x" id="computer-scissors"></i>
+                </div>
+
+            </div>
+
+        </section>
+        <div class="reult">
             <h3><span id="result">You Win/Lose/Draw</span></h3>
         </div>
-    </section>
-</main>
+    </main>
+</div>
 
 <body>
 

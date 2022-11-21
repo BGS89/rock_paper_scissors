@@ -1,11 +1,50 @@
+body {
+    background-color: #2b2d42;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Passion One', cursive;
+    
+}
+
+main {
+    border: 10px solid #8d99ae ;
+    width: fit-content;
+    background: #edf2f4;
+    border-radius: 50px;
+
+}
+
+header {
+    text-align: center;
+}
+
 .player {
     border: 1px solid black;
     padding: 10px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     width: 500px;
+    padding: 10px;
 }
+
+.player button {
+    font-family: 'Passion One', cursive;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 5px solid #8d99ae;
+}
+
+.player button:hover {
+    border: 5px solid #2b2d42 ;   
+}
+
 .controls {
     border: 1px solid black;
     padding: 10px;
@@ -13,5 +52,57 @@
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     width: 500px;
+}
+
+.controls button {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Passion One', cursive;
+}
+
+h3 {
+    text-align: center;
+}
+
+.result {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hand {
+    border: 10px solid #d90429;
+    background: #edf2f4;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+
+
+
+
+#player-rock {
+    display: none;
+}
+#player-paper {
+    display: none;
+}
+#player-scissors {
+    display: none;
+}
+
+
+#computer-rock {
+    display: none;
+}
+#computer-paper {
+    display: none;
+}
+#computer-scissors {
+    display: none;
 }
 

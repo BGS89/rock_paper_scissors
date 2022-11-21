@@ -11,7 +11,8 @@ const computerRock = document.getElementById('computer-rock');
 const computerPaper = document.getElementById('computer-paper');
 const computerScissors = document.getElementById('computer-scissors');
 
-
+const scoreOne = document.getElementById('score-one');
+const scoreTwo = document.getElementById('score-two');
 
 const response = document.getElementById('response');
 
@@ -109,12 +110,14 @@ play.addEventListener('click', computerSelector);
 
 reset.addEventListener('click', function () {
     
-
+    scoreOne.innerHTML = 0;
+    scoreTwo.innerHTML = 0;
+    playerScore = 0;
+    computerScore = 0;
     pSelector = '';
-    firstResponse.innerHTML = 'Player 1';
     compSelector = '';
-    secondResponse.innerHTML = 'Computer';
-    result.innerHTML = ' ';
+    
+    result.innerHTML = '?';
 
     playerRock.style.display = 'none';
     playerPaper.style.display = 'none';

@@ -33,7 +33,7 @@ rock.addEventListener('click', function () {
     computerRock.style.display = 'none';
     computerPaper.style.display = 'none';
     computerScissors.style.display = 'none';
-    
+
 
 });
 
@@ -42,7 +42,7 @@ paper.addEventListener('click', function () {
     playerPaper.style.display = 'block';
     playerRock.style.display = 'none';
     playerScissors.style.display = 'none';
-   
+
     computerRock.style.display = 'none';
     computerPaper.style.display = 'none';
     computerScissors.style.display = 'none';
@@ -65,7 +65,9 @@ function computerSelector() {
 
 
     let randomNumber = Math.floor((Math.random() * 3) + 1);
-    if (randomNumber == 1) {
+    if (pSelector.length < 1) {
+        alert('Please select Rock, Paper or Scissors');
+    } else if (randomNumber == 1) {
         compSelector = 'Rock';
         computerRock.style.display = 'block'
         computerPaper.style.display = 'none'
@@ -100,7 +102,7 @@ function computerSelector() {
         scoreOne.innerHTML = playerScore;
         scoreTwo.innerHTML = computerScore;
     }
- 
+
 }
 
 
@@ -109,14 +111,14 @@ play.addEventListener('click', computerSelector);
 
 
 reset.addEventListener('click', function () {
-    
+
     scoreOne.innerHTML = 0;
     scoreTwo.innerHTML = 0;
     playerScore = 0;
     computerScore = 0;
     pSelector = '';
     compSelector = '';
-    
+
     result.innerHTML = '?';
 
     playerRock.style.display = 'none';

@@ -11,56 +11,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
-
-<div class="container">
+<body>
 
     <main>
-        <header>
+        <div id="header">
             <h1>ROCK || PAPER || SCISSORS</h1>
-        </header>
-        <section class="player">
+        </div>
+        <div id="options">
             <button class="option" id="rock" value="rock">Rock</button>
             <button class="option" id="paper" value="paper">Paper</button>
             <button class="option" id="scissors" value="scissors">Scissors</button>
-        </section>
-
-        <div class="controls">
+        </div>
+        <div id="controls">
             <button id="play">PLAY</button>
             <button id="reset">RESET</button>
         </div>
-
-        <section class="result">
-            <div class="option">
+        <div id="hands">
+            <div class="results">
                 <h3><span id="firstResponse">Player </span><span id="score-one">0</span></h3>
                 <div class="hand">
                     <i class="fa-regular fa-hand-back-fist fa-8x" id="player-rock"></i>
                     <i class="fa-regular fa-hand fa-8x" id="player-paper"></i>
                     <i class="fa-regular fa-hand-scissors fa-8x" id="player-scissors"></i>
                 </div>
-
-
             </div>
-            <div class="option">
+            <div class="result">
                 <h3><span id="secondResponse">Computer <span id="score-two">0</span></span></h3>
                 <div class="hand">
                     <i class="fa-regular fa-hand-back-fist fa-8x" id="computer-rock"></i>
                     <i class="fa-regular fa-hand fa-8x" id="computer-paper"></i>
                     <i class="fa-regular fa-hand-scissors fa-8x" id="computer-scissors"></i>
                 </div>
-
+    
             </div>
-
-        </section>
-        <div class="descision">
-            
+        </div>
+        <div id="outcome">
             <h3><span id="result">?</span></h3>
         </div>
     </main>
-</div>
-
-<body>
-
-
     <script src="script.js"></script>
 </body>
 

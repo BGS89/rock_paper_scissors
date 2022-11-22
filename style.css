@@ -1,86 +1,98 @@
 body {
-    background-color: #2b2d42;
-}
-
-.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-family: 'Passion One', cursive;
-    
+    background: #1d3557;
 }
 
 main {
-    border: 10px solid #8d99ae ;
+    display: grid;
+    gap: 5px;
     width: fit-content;
-    background: #edf2f4;
-    border-radius: 50px;
-
+    max-width: 640px;
+    border: 10px solid #a8dadc;
+    background: #f1faee;
+    border-radius: 30px;
+    padding: 5px;
 }
 
-header {
+h1 {
     text-align: center;
 }
 
-.player {
-    border: 1px solid black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 500px;
-    padding: 10px;
-}
-
-.player button {
+button {
     font-family: 'Passion One', cursive;
+
+}
+
+
+#options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#options button {
     height: 75px;
     width: 75px;
     border-radius: 50%;
-    border: 5px solid #8d99ae;
+    justify-self: center;
+}
+#options button:hover {
+    border-color: #e63946;
 }
 
-.player button:hover {
-    border: 5px solid #2b2d42 ;   
-}
-
-.controls {
-    border: 1px solid black;
-    padding: 10px;
+#controls {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    width: 500px;
+    margin-top: 10px;
 }
 
-.controls button {
+#controls button {
     padding: 10px;
-    border-radius: 5px;
-    font-family: 'Passion One', cursive;
+    border-radius: 20px;
 }
 
-h3 {
+#controls button:hover {
+    border-color: #1d3557;
+}
+
+#result {
+    display: grid;
+    gap: 5px;
+}
+
+#outcome {
     text-align: center;
+
+}
+
+#hands {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .result {
-    display: flex;
-    justify-content: space-around;
+
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
 }
-
-
 
 .hand {
-    border: 10px solid #d90429;
-    background: #edf2f4;
-    width: 200px;
-    height: 200px;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;   
 }
+
+
 
 
 

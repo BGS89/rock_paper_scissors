@@ -93,30 +93,13 @@ button {
 }
 
 
-
-
-
-
-
-
-#player-rock {
+.play {
     display: none;
 }
-#player-paper {
-    display: none;
-}
-#player-scissors {
+
+.cplay {
     display: none;
 }
 
 
-#computer-rock {
-    display: none;
-}
-#computer-paper {
-    display: none;
-}
-#computer-scissors {
-    display: none;
-}
 

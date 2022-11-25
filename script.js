@@ -97,5 +97,6 @@ reset.addEventListener('click', function () {
     scoreTwo.innerHTML = 0;
     playerScore = 0;
     computerScore = 0;
+    playerOne = '';
 })
 
